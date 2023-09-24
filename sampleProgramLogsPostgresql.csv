@@ -1,0 +1,21 @@
+"id","logs","timestored","displayed"
+1,"Program 11111111111111111111111111111111 invoke [1]|||Program 11111111111111111111111111111111 success",1657618532,False
+2,"Upgraded program 85GB2GBrh15nj5vwfPLZBDW4NHqUuWuXeeago9oUEtnJ",1657618537,False
+3,"Program 85GB2GBrh15nj5vwfPLZBDW4NHqUuWuXeeago9oUEtnJ invoke [1]|||Program log: Instruction: CreateVotetopic|||Program 11111111111111111111111111111111 invoke [2]|||Program 11111111111111111111111111111111 success|||Program log: create_votetopic to this topic now: ""Next Class president for 2023"" with options: ""Jane, Mary, Elise, Joe, Simpson, Json""|||Program log: options are: [
+    ""Jane"",
+    "" Mary"",
+    "" Elise"",
+    "" Joe"",
+    "" Simpson"",
+    "" Json"",
+], with length: 6|||Program log: votetopic with 0 voters: [
+    ""3xfx7HR2X4RV99zeZZcCkiv5BLsrG1ydbypmx8RRHVmK"",
+]|||Program 85GB2GBrh15nj5vwfPLZBDW4NHqUuWuXeeago9oUEtnJ consumed 74588 of 200000 compute units|||Program 85GB2GBrh15nj5vwfPLZBDW4NHqUuWuXeeago9oUEtnJ success",1657618538,False
+4,"Program 85GB2GBrh15nj5vwfPLZBDW4NHqUuWuXeeago9oUEtnJ invoke [1]|||Program log: Instruction: CreateVotetopic|||Program 11111111111111111111111111111111 invoke [2]|||Program 11111111111111111111111111111111 success|||Program log: create_votetopic to this topic now: ""Next president for 2022"" with options: ""Donald Trump, Jane Doe, Clinton, John Doe""|||Program log: options are: [
+    ""Donald Trump"",
+    "" Jane Doe"",
+    "" Clinton"",
+    "" John Doe"",
+], with length: 4|||Program log: votetopic with 0 voters: [
+    ""3xfx7HR2X4RV99zeZZcCkiv5BLsrG1ydbypmx8RRHVmK"",
+]|||Program 85GB2GBrh15nj5vwfPLZBDW4NHqUuWuXeeago9oUEtnJ consumed 74200 of 200000 compute units|||Program 85GB2GBrh15nj5vwfPLZBDW4NHqUuWuXeeago9oUEtnJ success",1657618539,False
