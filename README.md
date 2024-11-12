@@ -4,13 +4,13 @@ Firstly, install solana and anchor as shown in the guide https://book.anchor-lan
 
 :white_check_mark: Two vote topics ('Next Class president for 2023' and 'Next president for 2022') were created here by the admin with various options separated by comma. :ok_woman:, :ok_person:, :ok_man:
 
-![alt text](https://github.com/cyberbeam524/solana-voting/blob/main/solana-voting-programs/imgs/voteTopicsCreated.png)
+![alt text](https://github.com/cyberbeam524/solana-voting/blob/main/imgs/voteTopicsCreated.png)
 
 :x: Error was thrown in the solana program when only one option with no commas was provided. It does not make sense for vote topics to be provided with only one option and so this is to prevent admins from creating such voting topics. 
 
 :eight_pointed_black_star: The solana-voting program can also be filtered for vote topics such as 'Next president for 2022' which is shown below with its respective options.
 
-![alt text](https://github.com/cyberbeam524/solana-voting/blob/main/solana-voting-programs/imgs/errorForOneOption.png)
+![alt text](https://github.com/cyberbeam524/solana-voting/blob/main/imgs/errorForOneOption.png)
 
 
 
@@ -36,7 +36,7 @@ anchor build
 anchor deploy
 ```
 Take note of programId displayed:
-![alt text](https://github.com/cyberbeam524/solana-voting/blob/main/solana-voting-programs/imgs/programIDDeployment.png)
+![alt text](https://github.com/cyberbeam524/solana-voting/blob/main/imgs/programIDDeployment.png)
 
 Place programId in solana-voting-programs/programs/solana-voting/src/lib.rs in line 7:
 ```
@@ -87,3 +87,38 @@ A sample log row that is created after CreateVotetopic program function is trigg
 ], with length: 6**|||Program log: votetopic with 0 voters: [
     ""3xfx7HR2X4RV99zeZZcCkiv5BLsrG1ydbypmx8RRHVmK"",
 ]|||Program 85GB2GBrh15nj5vwfPLZBDW4NHqUuWuXeeago9oUEtnJ consumed 74588 of 200000 compute units|||Program 85GB2GBrh15nj5vwfPLZBDW4NHqUuWuXeeago9oUEtnJ success",**1657618538**,**False**
+
+
+
+
+export PATH="/home/maars505/.local/share/solana/install/active_release/bin:$PATH"
+warning: be sure to add `/home/maars505/.cargo/bin` to your PATH to be able to run the installed binaries
+
+
+Rust is installed now. Great!
+
+To get started you may need to restart your current shell.
+This would reload your PATH environment variable to include
+Cargo's bin directory ($HOME/.cargo/bin).
+
+To configure your current shell, you need to source
+the corresponding env file under $HOME/.cargo.
+
+This is usually done by running one of the following (note the leading DOT):
+. "$HOME/.cargo/env"            # For sh/bash/zsh/ash/dash/pdksh
+source "$HOME/.cargo/env.fish"  # For fish
+
+
+psql postgres://postgres:123@localhost:5433/logstreams2
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+
+lsof -i :8000
+kill -9 <PID>
+
+
+

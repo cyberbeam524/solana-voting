@@ -40,4 +40,19 @@ impl LogStream {
                 .execute(conn)
                 .is_ok()
     }
+
+    pub fn insert_batch(streams: &Vec<LogStream>, conn: &PgConnection) -> bool {
+        if streams.is_empty() {
+            println!("No logs to insert. Skipping batch.");
+            return true; // Nothing to insert, considered successful
+        }
+    
+        println!("**********************Inserting batch into database********************************");
+    
+        // Perform bulk insert
+        diesel::insert_into(crate::schema::logstreams::table)
+            .values(&*streams) // Pass the entire batch as a slice
+            .execute(conn)
+            .is_ok()
+    }
 }

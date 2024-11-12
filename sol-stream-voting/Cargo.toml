@@ -6,6 +6,8 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+bb8 = "0.8.6"
+bb8-diesel = "0.2.1"
 borsh = "0.9.1"
 rocket = {version = "0.5.0-rc.1", features = ["tls", "json"]}
 rocket_cors = {git = "https://github.com/lawliet89/rocket_cors", branch = "master"}
@@ -13,6 +15,7 @@ solana-client = "1.8.3"
 solana-account-decoder = "1.8.3"
 serde = "1.0.130"
 solana-sdk = "1.8.3"
-diesel = { version = "1.4.4", features = ["postgres"] }
+diesel = { version = "1.4.4", features = ["postgres", "r2d2"] }
 dotenv = "0.15.0"
 chrono = "0.4"
+r2d2 = "0.8"
